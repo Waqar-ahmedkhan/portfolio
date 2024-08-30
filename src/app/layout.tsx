@@ -1,9 +1,7 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Calistoga } from "next/font/google";
-import { twMerge } from "tailwind-merge";
-import { ThemeProvider } from "@/context/ThemeContext"; // Import ThemeProvider
+import { ThemeProvider } from "@/context/ThemeContext";
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -20,8 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={twMerge(inter.variable, calistoga.variable, " bg-gray-900 text-white antialiased font-sans")}>
-        <ThemeProvider> 
+      <body className={`${inter.variable} ${calistoga.variable} bg-white dark:bg-black text-black dark:text-white antialiased font-sans`}>
+        <ThemeProvider>
           {children}
         </ThemeProvider>
       </body>
