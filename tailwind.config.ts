@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'class', 
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
@@ -20,7 +21,12 @@ const config: Config = {
         md: "2rem",
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: `var(--font-sans)`,
+        serif: `var(--font-serif)`
+ }
+    },
   },
   plugins: [],
 };
