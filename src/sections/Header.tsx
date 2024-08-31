@@ -15,7 +15,7 @@ export const Header = () => {
             </nav>
             <button 
                 onClick={toggleDarkMode} 
-                className="p-2 rounded-full hidden md:block bg-gray-200 dark:bg-gray-700 text-black dark:text-black hover:bg-gray-300 dark:hover:bg-gray-600 transition duration-200"
+                className="p-2 rounded-full hidden md:block bg-gray-200 dark:bg-gray-700  text-black dark:text-black hover:bg-gray-300 dark:hover:bg-gray-600 transition duration-200"
                 aria-label="Toggle dark mode"
             >
                 {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -23,3 +23,6 @@ export const Header = () => {
         </div>
     );
 };
+
+
+jjsdsdjklsdkls
