@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Calistoga } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { HeroSection } from "@/sections/Hero";
 
 export const metadata: Metadata = {
   title: "My Portfolio",
