@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${calistoga.variable} bg-white dark:bg-black text-black dark:text-white antialiased font-sans`}>
+      <body className={`${inter.variable} ${calistoga.variable} bg-white dark:bg-gray-900 text-black dark:text-white antialiased font-sans`}>
         <ThemeProvider>
           {children}
         </ThemeProvider>
