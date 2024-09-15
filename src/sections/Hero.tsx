@@ -16,11 +16,13 @@ export const HeroSection = () => {
         <h1 className="text-3xl  md:text-6xl font-bold mb-6 leading-tight">
             Building Exceptional <br /> 
             <span className="text-indigo-600  dark:text-indigo-400">User Experiences</span>
-          </h1>
-        <p className="text-lg md:text-xl  text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
-            I specialize in transforming designs into functional, high-performing web applications. 
-            Let's discuss your next project and bring your vision to life.
-          </p>
+        </h1>
+        
+        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
+          Full-stack wizard turning complex ideas into seamless, high-performance web solutions. 
+          Expertise in front-end finesse, back-end robustness, and AI integration for next-level user experiences. 
+          Let's build something extraordinary together.
+        </p>
 
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
           <button className="bg-gray-800 sm:text-sm text-white px-4 py-3 md:px-6 md:py-3 rounded-full hover:bg-gray-700 transition flex items-center justify-center">
