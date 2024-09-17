@@ -9,20 +9,19 @@ export const HeroSection = () => {
         {/* Background grain image */}
         <div className="container">
           <div
-          className="absolute inset-0 -z-30 opacity-5"
+          className="absolute inset-0  -z-30 opacity-5"
           style={{
             backgroundImage: `url(${grainImage})`
            
           }}
         ></div>
-         </div>
-      <div className=" hero-ring size-[500px] md:size-[720px]  "></div>
-      <div className=" hero-ring size-[550px] md:size-[900px]  "></div>
-      <div className=" hero-ring size-[550px] md:size-[1100px]  "></div>
-      <div className=" hero-ring size-[550px] md:size-[1300px]  "></div>
-      <div className=" hero-ring size-[550px] md:size-[1500px]  "></div>
-      <div className=" hero-ring size-[550px] md:size-[1700px]  "></div>
-      <div className=" hero-ring size-[550px] md:size-[1900px]  "></div>
+      
+      <div className=" hero-ring size-[500px] md:size-[710px]  "></div>
+      <div className=" hero-ring size-[550px] md:size-[85000px]  "></div>
+      <div className=" hero-ring size-[550px] md:size-[1000px]  "></div>
+      <div className=" hero-ring size-[550px] md:size-[1150px]  "></div>
+      <div className=" hero-ring size-[550px] md:size-[1350px]  "></div>
+      
         {/* Decorative rings */}
         <div className="absolute w-48 h-48 rounded-full border-4 border-indigo-600 opacity-30 -top-10 -left-10 z-0"></div>
         <div className="absolute w-72 h-72 rounded-full border-4 border-indigo-400 opacity-20 -bottom-20 -right-16 z-0"></div>
@@ -79,6 +78,7 @@ export const HeroSection = () => {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
