@@ -5,15 +5,17 @@ import grainImage from "../assets/images/grain.jpg";
 export const HeroSection = () => {
   return (
     <>
-      <div className="py-16 md:py-24 lg:py-32 flex justify-center text-black dark:text-white  transition-colors duration-500 relative overflow-hidden">
+      <div className="py-16  md:py-24 lg:py-30 flex justify-center text-black dark:text-white  transition-colors duration-500 relative overflow-hidden overflow-x-clip">
         {/* Background grain image */}
-        <div
+        <div className="container">
+          <div
           className="absolute inset-0 -z-30 opacity-5"
           style={{
             backgroundImage: `url(${grainImage})`
            
           }}
         ></div>
+         </div>
       <div className=" hero-ring size-[500px] md:size-[720px]  "></div>
       <div className=" hero-ring size-[550px] md:size-[900px]  "></div>
       <div className=" hero-ring size-[550px] md:size-[1100px]  "></div>
