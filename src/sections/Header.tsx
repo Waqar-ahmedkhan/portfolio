@@ -6,7 +6,7 @@ export const Header = () => {
     const { isDarkMode, toggleDarkMode } = useTheme();
 
     return (
-        <div className="flex justify-between items-center relative top-3 px-4 max-w-7xl mx-auto">
+        <div className="flex justify-between z-40 items-center relative top-3 px-4 max-w-7xl mx-auto">
             <nav className="flex md:gap-10 gap-1 p-2 border mx-auto border-gray-700 dark:border-gray-900 bg-gray-200 dark:bg-gray-800 rounded-full backdrop-blur">
                 <a href="/" className="nav-item">Home</a>
                 <a href="/projects" className="nav-item">Projects</a>
