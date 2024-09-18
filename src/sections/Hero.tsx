@@ -2,14 +2,17 @@ import Image from "next/image";
 import memoji from "../assets/images/memoji-computer.png";
 import grainImage from "../assets/images/grain.jpg";
 import EarthIcon from "../assets/icons/earth.png"; 
-import Mars from "../"
+import Mars from "../assets/icons/mars.png";
+import Mercury from "../assets/icons/mercury.png";
+import HeroOrbit from "@/components/HeroOrbit";
+import StarIcon from  "../assets/icons/star.svg"
 
 export const HeroSection = () => {
   return (
     <>
       <div className="py-16 md:py-24 lg:py-30 flex justify-center text-black dark:text-white transition-colors duration-500 relative overflow-x-clip">
-        {/* Background grain image */}
         <div className="container">
+          {/* Background grain image */}
           <div
             className="absolute inset-0 -z-30 opacity-5"
             style={{
@@ -17,40 +20,65 @@ export const HeroSection = () => {
             }}
           ></div>
 
-          <div className=" hero-ring size-[650px] md:size-[710px]  "></div>
-          <div className=" hero-ring size-[750px] md:size-[850px]  "></div>
-          <div className=" hero-ring size-[850px] md:size-[1050px]  "></div>
-          <div className=" hero-ring size-[950px] md:size-[1250px]  "></div>
-          <div className=" hero-ring size-[1050px] md:size-[1450px]  "></div>
-          <div className="absolute left-1/2  top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="w-[800px] h-[800px] animate-spin [animation-duration:30s]">
-              <div className="inline-flex animate-spin [animation-duration:5s]">
-                {/* Replaced StarIcon with the EarthIcon image */}
-                <Image
-                  src={EarthIcon}
-                  alt="Earth Icon"
-                  width={100} 
-                  height={100} 
-                  className="dark:text-emerald-500 text-gray-600"
-                />
-              </div>
-            </div>
-          </div>
+          {/* Hero rings */}
+          <div className="hero-ring size-[650px] md:size-[710px]"></div>
+          <div className="hero-ring size-[750px] md:size-[850px]"></div>
+          <div className="hero-ring size-[850px] md:size-[1050px]"></div>
+          <div className="hero-ring size-[950px] md:size-[1250px]"></div>
+          <div className="hero-ring size-[1050px] md:size-[1450px]"></div>
+          <div className="hero-ring size-[1050px] md:size-[1650px]"></div>
+          <div className="hero-ring size-[1050px] md:size-[1850px]"></div>
+          <div className="hero-ring size-[1050px] md:size-[2050px]"></div>
+          <div className="hero-ring size-[1050px] md:size-[2250px]"></div>
 
-          <div className="absolute left-1/2  top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="w-[800px] h-[800px] animate-spin [animation-duration:30s]">
-              <div className="inline-flex animate-spin [animation-duration:5s]">
-                {/* Replaced StarIcon with the EarthIcon image */}
-                <Image
+           {/* Earth  */}
+          <HeroOrbit  size={760} duration={50}>
+          <Image
                   src={EarthIcon}
-                  alt="Earth Icon"
-                  width={100} 
-                  height={100} 
-                  className="dark:text-emerald-500 text-gray-600"
+                  alt="Earth icon"
+                  width={90} 
+                  height={90} 
+                  className=""
                 />
-              </div>
-            </div>
-          </div>
+          </HeroOrbit>
+        {/* Mercury */}
+          <HeroOrbit size={600} duration={30}>
+          <Image
+                  src={Mercury}
+                  alt="Mercury icon"
+                  width={90} 
+                  height={90} 
+                  className=""
+                />
+          </HeroOrbit>
+
+          {/* Mars */}
+
+          <HeroOrbit size={950} duration={90}>
+          <Image
+                  src={Mars}
+                  alt="Mercury icon"
+                  width={110} 
+                  height={110} 
+                  className=""
+                />
+          </HeroOrbit>
+
+          <HeroOrbit  size={550} duration={500}>
+          <StarIcon className="text-emerald-500 size-28"/>
+          </HeroOrbit>
+
+          <HeroOrbit  size={330} duration={500}>
+          <StarIcon className="text-emerald-500 size-5"/>
+          </HeroOrbit>
+
+          <HeroOrbit  size={670} duration={500}>
+          <StarIcon className="text-emerald-500 size-15"/>
+          </HeroOrbit>
+
+          <HeroOrbit  size={1100} duration={500}>
+          <StarIcon className="text-emerald-500 size-10"/>
+          </HeroOrbit>
 
           {/* Decorative rings */}
           <div className="absolute w-48 h-48 rounded-full border-4 border-indigo-600 opacity-30 -top-10 -left-10 z-0"></div>
@@ -82,7 +110,7 @@ export const HeroSection = () => {
             </h1>
 
             <p className="md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
-              I specialize in transforming designs into functional, high-performing web applications. Let's discuss your next project and bring your vision to life.
+              I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project and bring your vision to life.
             </p>
 
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 sm:space-x-4">
@@ -104,7 +132,7 @@ export const HeroSection = () => {
                 </svg>
               </button>
               <button className="bg-black text-sm dark:bg-white dark:text-black text-white px-4 py-3 md:px-6 md:py-3 rounded-full hover:bg-gray-200 dark:hover:bg-gray-100 transition">
-                Let's Connect 👋
+                Let&apos;s Connect 👋
               </button>
             </div>
           </div>
