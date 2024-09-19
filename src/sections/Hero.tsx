@@ -34,35 +34,35 @@ export const HeroSection = () => {
           <div className="hero-ring size-[1050px] md:size-[2250px]"></div>
 
           {/* Earth */}
-          <HeroOrbit size={760} rotate={-45} duration={50}>
+          <HeroOrbit size={760} rotate={-45} duration={100}>
             <Image src={EarthIcon} alt="Earth icon" width={90} height={90} />
           </HeroOrbit>
 
           {/* Mercury */}
-          <HeroOrbit size={600} rotate={90} duration={30}>
+          <HeroOrbit size={600} rotate={90} duration={90}>
             <Image src={Mercury} alt="Mercury icon" width={90} height={90} />
           </HeroOrbit>
 
           {/* Mars */}
-          <HeroOrbit size={950} rotate={-30} duration={90}>
+          <HeroOrbit size={950} rotate={-30} duration={190}>
             <Image src={Mars} alt="Mars icon" width={110} height={110} />
           </HeroOrbit>
 
           {/* Stars */}
           <HeroOrbit size={650} rotate={-60} duration={500}>
-            <StarIcon className="text-emerald-500 size-28" />
+            <StarIcon className="text-red-500 size-20" />
           </HeroOrbit>
 
-          <HeroOrbit size={430} rotate={-30} duration={500}>
-            <StarIcon className="text-emerald-500 size-30" />
-          </HeroOrbit>
-
-          <HeroOrbit size={900} rotate={-45} duration={500}>
+          <HeroOrbit size={430} rotate={150} duration={3000}>
             <StarIcon className="text-emerald-500 size-20" />
           </HeroOrbit>
 
-          <HeroOrbit size={1100} rotate={-80} duration={500}>
-            <StarIcon className="text-emerald-500 size-30" />
+          <HeroOrbit size={900} rotate={-45} duration={4000}>
+            <StarIcon className="text-orange-500 size-20" />
+          </HeroOrbit>
+
+          <HeroOrbit size={1100} rotate={-90} duration={500}>
+            <StarIcon className="text-emerald-500 size-20" />
           </HeroOrbit>
 
           {/* Extra Stars */}
@@ -70,12 +70,12 @@ export const HeroSection = () => {
             <StarIcon className="text-yellow-400 size-24" />
           </HeroOrbit>
 
-          <HeroOrbit size={750} rotate={-100} duration={700}>
-            <StarIcon className="text-blue-400 size-22" />
+          <HeroOrbit size={750} rotate={100} duration={700}>
+            <StarIcon className="text-blue-400 size-24" />
           </HeroOrbit>
 
           <HeroOrbit size={300} rotate={45} duration={400}>
-            <StarIcon className="text-red-500 size-26" />
+            <StarIcon className="text-red-500 size-20" />
           </HeroOrbit>
 
         
