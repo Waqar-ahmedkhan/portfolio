@@ -1,11 +1,13 @@
 import Image from "next/image";
 import memoji from "../assets/images/memoji-computer.png";
 import grainImage from "../assets/images/grain.jpg";
-import EarthIcon from "../assets/icons/earth.png"; 
+import EarthIcon from "../assets/icons/earth.png";
 import Mars from "../assets/icons/mars.png";
 import Mercury from "../assets/icons/mercury.png";
 import HeroOrbit from "@/components/HeroOrbit";
-import StarIcon from  "../assets/icons/star.svg"
+import StarIcon from "../assets/icons/star.svg";
+import Satellite from "../assets/icons/satellite.png";
+import ISS from "../assets/icons/space-station.png";
 
 export const HeroSection = () => {
   return (
@@ -31,54 +33,64 @@ export const HeroSection = () => {
           <div className="hero-ring size-[1050px] md:size-[2050px]"></div>
           <div className="hero-ring size-[1050px] md:size-[2250px]"></div>
 
-           {/* Earth  */}
-          <HeroOrbit  size={760} duration={50}>
-          <Image
-                  src={EarthIcon}
-                  alt="Earth icon"
-                  width={90} 
-                  height={90} 
-                  className=""
-                />
+          {/* Earth */}
+          <HeroOrbit size={760} rotate={-45} duration={50}>
+            <Image src={EarthIcon} alt="Earth icon" width={90} height={90} />
           </HeroOrbit>
-        {/* Mercury */}
-          <HeroOrbit size={600} duration={30}>
-          <Image
-                  src={Mercury}
-                  alt="Mercury icon"
-                  width={90} 
-                  height={90} 
-                  className=""
-                />
+
+          {/* Mercury */}
+          <HeroOrbit size={600} rotate={90} duration={30}>
+            <Image src={Mercury} alt="Mercury icon" width={90} height={90} />
           </HeroOrbit>
 
           {/* Mars */}
-
-          <HeroOrbit size={950} duration={90}>
-          <Image
-                  src={Mars}
-                  alt="Mercury icon"
-                  width={110} 
-                  height={110} 
-                  className=""
-                />
+          <HeroOrbit size={950} rotate={-30} duration={90}>
+            <Image src={Mars} alt="Mars icon" width={110} height={110} />
           </HeroOrbit>
 
-          <HeroOrbit  size={550} duration={500}>
-          <StarIcon className="text-emerald-500 size-28"/>
+          {/* Stars */}
+          <HeroOrbit size={650} rotate={-60} duration={500}>
+            <StarIcon className="text-emerald-500 size-28" />
           </HeroOrbit>
 
-          <HeroOrbit  size={330} duration={500}>
-          <StarIcon className="text-emerald-500 size-5"/>
+          <HeroOrbit size={430} rotate={-30} duration={500}>
+            <StarIcon className="text-emerald-500 size-30" />
           </HeroOrbit>
 
-          <HeroOrbit  size={670} duration={500}>
-          <StarIcon className="text-emerald-500 size-15"/>
+          <HeroOrbit size={900} rotate={-45} duration={500}>
+            <StarIcon className="text-emerald-500 size-20" />
           </HeroOrbit>
 
-          <HeroOrbit  size={1100} duration={500}>
-          <StarIcon className="text-emerald-500 size-10"/>
+          <HeroOrbit size={1100} rotate={-80} duration={500}>
+            <StarIcon className="text-emerald-500 size-30" />
           </HeroOrbit>
+
+          {/* Extra Stars */}
+          <HeroOrbit size={550} rotate={30} duration={600}>
+            <StarIcon className="text-yellow-400 size-24" />
+          </HeroOrbit>
+
+          <HeroOrbit size={750} rotate={-100} duration={700}>
+            <StarIcon className="text-blue-400 size-22" />
+          </HeroOrbit>
+
+          <HeroOrbit size={300} rotate={45} duration={400}>
+            <StarIcon className="text-red-500 size-26" />
+          </HeroOrbit>
+
+        
+        
+
+          
+
+          <div className="absolute right-40 satellite-circle">
+          <Image src={Satellite} alt="Satellite" width={50} height={50} />
+        </div>
+
+        {/* Circular movement for ISS */}
+        <div className="absolute top-1/2 left-1/5 iss-circle">
+          <Image src={ISS} alt="International Space Station" width={50} height={50} />
+        </div>
 
           {/* Decorative rings */}
           <div className="absolute w-48 h-48 rounded-full border-4 border-indigo-600 opacity-30 -top-10 -left-10 z-0"></div>
@@ -98,7 +110,7 @@ export const HeroSection = () => {
               />
               <div className="flex py-1 px-5 flex-row items-center space-x-4 bg-black dark:bg-gray-800 text-white rounded-md">
                 <div className="h-3 w-3 rounded-full bg-green-500"></div>
-                <div className="">Available for new projects</div>
+                <div>Available for new projects</div>
               </div>
             </div>
 
