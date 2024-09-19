@@ -79,11 +79,7 @@ export const HeroSection = () => {
           </HeroOrbit>
 
         
-        
-
-          
-
-          <div className="absolute right-40 satellite-circle">
+        <div className="absolute right-40 satellite-circle">
           <Image src={Satellite} alt="Satellite" width={50} height={50} />
         </div>
 
@@ -122,7 +118,7 @@ export const HeroSection = () => {
             </h1>
 
             <p className="md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
-              I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project and bring your vision to life.
+              I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project and bring your vision to life. 
             </p>
 
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 sm:space-x-4">
