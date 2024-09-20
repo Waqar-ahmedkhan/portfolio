@@ -1,6 +1,8 @@
+import React from 'react';
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import { ProjectCard } from '@/components/ProjectCards';
 
 const portfolioProjects = [
   {
@@ -41,6 +43,25 @@ const portfolioProjects = [
   },
 ];
 
+
 export const ProjectsSection = () => {
-  return <div>Projects Section</div>;
+  return (
+    <div className="min-h-screen dark:text-white text-black py-16">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-teal-400 text-sm uppercase tracking-wide mb-2">Real-World Results</h2>
+          <h1 className="text-4xl font-bold mb-4">Featured Projects</h1>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            See how I transformed concepts into engaging digital experiences.
+          </p>
+        </div>
+        
+        <div className="space-y-20">
+          {portfolioProjects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };

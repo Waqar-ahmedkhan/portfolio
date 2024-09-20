@@ -9,7 +9,7 @@ import DecorativeRings from "@/components/SpaceEnvironment";
 export const HeroSection = () => {
   return (
     <>
-      <div className="py-16 md:py-24 lg:py-30 flex justify-center text-black dark:text-white transition-colors duration-500 relative overflow-x-clip">
+      <div className="py-16 md:py-24  lg:py-30 flex justify-center -z-20 text-black dark:text-white transition-colors duration-500 relative overflow-x-clip">
         <div className="container">
           {/* Background grain image */}
           <div
