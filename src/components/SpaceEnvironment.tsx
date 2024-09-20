@@ -1,7 +1,8 @@
 "use client";
+
 import React, { useMemo } from 'react';
 
-const StarField = ({ count = 150 }) => {
+const StarField = ({ count = 200 }) => {
   const stars = useMemo(() => {
     return Array.from({ length: count }, () => ({
       top: `${Math.random() * 100}%`,
@@ -33,8 +34,8 @@ const StarField = ({ count = 150 }) => {
 
 const SpaceEnvironment = () => {
   return (
-    <div className="absolute inset-0 pointer-events-none">
-      <StarField count={150} />
+    <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
+      <StarField count={200} />
     </div>
   );
 };

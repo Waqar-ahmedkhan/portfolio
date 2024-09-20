@@ -30,6 +30,22 @@ function SolarSystem() {
   <StarIcon className="text-red-500 size-15" />
 </HeroOrbit>
 
+<HeroOrbit size={350} rotate={-60} duration={500}>
+  <StarIcon className="text-indigo-500 size-15" />
+</HeroOrbit>
+
+<HeroOrbit size={970} rotate={-60} duration={500}>
+  <StarIcon className="text-red-500 size-15" />
+</HeroOrbit>
+
+<HeroOrbit size={200} rotate={-60} duration={500}>
+  <StarIcon className="text-lime-500 size-15" />
+</HeroOrbit>
+
+<HeroOrbit size={540} rotate={-60} duration={500}>
+  <StarIcon className="text-white size-15" />
+</HeroOrbit>
+
 <HeroOrbit size={430} rotate={150} duration={3000}>
   <StarIcon className="text-emerald-500 size-15" />
 </HeroOrbit>
@@ -51,6 +67,22 @@ function SolarSystem() {
 <HeroOrbit size={1000} rotate={-98} duration={1000}>
   <SpeckleIcon className="text-yellow-400 size-15" />
 </HeroOrbit>
+
+
+
+
+
+<HeroOrbit size={1200} rotate={78} duration={1000}>
+  <SpeckleIcon className="text-yellow-400 size-10" />
+</HeroOrbit>
+<HeroOrbit size={1100} rotate={-28} duration={1000}>
+  <SpeckleIcon className="text-yellow-400 size-15" />
+</HeroOrbit>
+<HeroOrbit size={900} rotate={-98} duration={1000}>
+  <SpeckleIcon className="text-yellow-400 size-15" />
+</HeroOrbit>
+
+
 
 {/* Extra Stars */}
 <HeroOrbit size={550} rotate={30} duration={600}>
