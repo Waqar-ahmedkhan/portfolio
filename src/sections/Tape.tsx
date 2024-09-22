@@ -11,6 +11,14 @@ const features = [
   "USER FRIENDLY",
   "RESPONSIVE",
   "MAINTAINABLE",
+  "PERFORMANT",
+  "ACCESSIBLE",
+  "SECURE",
+  "INTERACTIVE",
+  "SCALABLE",
+  "USER FRIENDLY",
+  "RESPONSIVE",
+  "MAINTAINABLE"
 ];
 
 const TiltedScrollingTape = () => {
