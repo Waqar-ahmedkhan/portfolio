@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -10,16 +11,10 @@ const features = [
   "SCALABLE",
   "USER FRIENDLY",
   "RESPONSIVE",
-  "MAINTAINABLE",
-  "PERFORMANT",
-  "ACCESSIBLE",
-  "SECURE",
-  "INTERACTIVE",
-  "SCALABLE",
-  "USER FRIENDLY",
-  "RESPONSIVE",
   "MAINTAINABLE"
 ];
+
+
 
 const TiltedScrollingTape = () => {
   const [isPaused, setIsPaused] = useState(false);
