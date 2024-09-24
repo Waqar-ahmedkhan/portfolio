@@ -4,6 +4,7 @@ import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import Image from "next/image";
+import TestimonialCard from "@/components/TestimontailCard";
 
 const testimonials = [
   {
