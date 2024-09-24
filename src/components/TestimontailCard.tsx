@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const TestimonialCard = ({ testimonial }) => {
+const TestimonialCard = ({ testimonial }:any) => {
   return (
     <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg max-w-sm mx-auto">
       <div className="flex items-center space-x-4 mb-4">
