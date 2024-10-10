@@ -43,10 +43,10 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="bg-gray-900 py-12">
+    <section className="bg-white dark:bg-gray-900 overflow-y-auto py-12">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-white">What Clients Say about Me</h2>
-        <p className="text-gray-400 mt-4">Don&apos;t just take my word for it. See what my clients have to say about my work.</p>
+        <h2 className="text-4xl font-bold text-black dark:text-white ">What Clients Say about Me</h2>
+        <p className="text-gray-400 dark:text-gray-300 mt-4">Don&apos;t just take my word for it. See what my clients have to say about my work.</p>
       </div>
       <div className="flex justify-center space-x-8">
         {testimonials.map((testimonial, index) => (

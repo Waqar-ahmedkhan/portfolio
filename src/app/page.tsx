@@ -11,7 +11,9 @@ export default function Home() {
       <Header/>     
      <HeroSection/> 
      <ProjectsSection/>  
-     <TiltedScrollingTape/>
+   <TiltedScrollingTape/>
+
+   
      <TestimonialsSection/>
 
     </div>
