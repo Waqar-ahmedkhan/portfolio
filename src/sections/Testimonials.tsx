@@ -3,11 +3,11 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
-import Image from "next/image";
 import TestimonialCard from "@/components/TestimontailCard";
 
 const testimonials = [
-  {
+    
+{
     name: "Alex Turner",
     position: "Marketing Manager @ TechStartups",
     text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
@@ -43,16 +43,20 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 overflow-y-auto py-12">
+    <section className="bg-white h-auto dark:bg-gray-900 py-12">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-black dark:text-white ">What Clients Say about Me</h2>
         <p className="text-gray-400 dark:text-gray-300 mt-4">Don&apos;t just take my word for it. See what my clients have to say about my work.</p>
       </div>
-      <div className="flex justify-center space-x-8">
+
+
+    <div className=" relative w-[100%] h-full">
+      <div className=" flex flex-row justify-center space-x-6">
         {testimonials.map((testimonial, index) => (
           <TestimonialCard key={index} testimonial={testimonial} />
         ))}
       </div>
+    </div>
     </section>
   );
 };

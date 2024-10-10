@@ -12,9 +12,8 @@ export default function Home() {
      <HeroSection/> 
      <ProjectsSection/>  
    <TiltedScrollingTape/>
-
    
-     <TestimonialsSection/>
+   <TestimonialsSection/>
 
     </div>
   );
