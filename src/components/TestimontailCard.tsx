@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TestimonialCard = ({ testimonial }:any) => {
   return (
-    <div className="min-w-[25%] h-[320px] bg-gray-500  dark:bg-gray-800 dark:text-white p-6 rounded-lg shadow-lg max-w-sm mx-auto">
+    <div className="min-w-[25%] h-[350px] bg-gray-500  dark:bg-gray-800 dark:text-white p-6 rounded-lg shadow-lg max-w-sm mx-auto">
       <div className="flex items-center  space-x-4 mb-4">
         <Image
           src={testimonial.avatar}
