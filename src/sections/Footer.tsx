@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-12 px-4">
+    <footer className="dark:bg-gray-900 bg-white   dark:text-gray-400  text-black py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="mb-10">
           <div className="bg-gradient-to-r from-emerald-400 via-teal-400 to-sky-500 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center shadow-lg">

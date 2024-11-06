@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo } from 'react';
+import React, { useMemo } from "react";
 
 const StarField = ({ count = 200 }) => {
   const stars = useMemo(() => {
@@ -8,7 +8,7 @@ const StarField = ({ count = 200 }) => {
       top: `${Math.random() * 100}%`,
       left: `${Math.random() * 100}%`,
       animationDuration: `${Math.random() * 3 + 2}s`,
-      size: Math.random() * 2 + 1
+      size: Math.random() * 2 + 1,
     }));
   }, [count]);
 
@@ -24,7 +24,7 @@ const StarField = ({ count = 200 }) => {
             width: `${star.size}px`,
             height: `${star.size}px`,
             animationDuration: star.animationDuration,
-            animationDelay: `${Math.random() * 2}s`
+            animationDelay: `${Math.random() * 2}s`,
           }}
         />
       ))}
