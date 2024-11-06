@@ -1,25 +1,23 @@
 "use client"
 import TestimonialCard from "../components/TestimontailCard";
 import { testimonials } from "@/libs/TestimonialDetails";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000); // Adjust timing as needed
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section className="bg-white h-screen dark:bg-gray-900 py-12">
+    <section className="bg-white h-screen dark:bg-gray-900 py-12 flex items-center justify-center">
       <div className="text-center mb-12">
         <h2 className="text-teal-400 text-sm uppercase tracking-wide mb-2">
           Happy clients
@@ -33,16 +31,21 @@ export const TestimonialsSection = () => {
         </p>
       </div>
 
-      <div className="relative w-full h-full flex justify-center items-center">
-        <button onClick={handlePrev} className="absolute left-4">
-          &#8249; {/* Left Arrow */}
-        </button>
-        
-        <TestimonialCard testimonial={testimonials[currentIndex]} />
-
-        <button onClick={handleNext} className="absolute right-4">
-          &#8250; {/* Right Arrow */}
-        </button>
+      <div className="relative w-full overflow-hidden">
+        {testimonials.map((testimonial, index) => (
+          <div
+            key={index}
+            className={`absolute w-full transition-transform duration-700 ease-in-out ${
+              index === currentIndex
+                ? "transform translate-x-0"
+                : index < currentIndex
+                ? "transform -translate-x-full"
+                : "transform translate-x-full"
+            }`}
+          >
+            <TestimonialCard testimonial={testimonial} />
+          </div>
+        ))}
       </div>
     </section>
   );
