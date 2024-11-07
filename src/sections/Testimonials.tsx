@@ -12,7 +12,6 @@ export const TestimonialsSection = () => {
 
 
     <div className=" relative w-[100%] h-full">
-      console.log("hello")
   
 
       <div className=" flex flex-row justify-center space-x-6">
