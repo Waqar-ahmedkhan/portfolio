@@ -16,6 +16,11 @@ const AboutMe = () => {
     { name: "React", icon: <ReactIcon className="text-teal-500" size={8} /> },
     { name: "Chrome", icon: <ChromeIcon className="text-teal-500" size={8} /> },
     { name: "Github", icon: <GithubIcon className="text-teal-500" size={8} /> },
+    { name: "HTML5", icon: <HtmlIcon className="text-teal-500" size={8} /> },
+    { name: "CSS3", icon: <CssIcon className="text-teal-500" size={8} /> },
+    { name: "React", icon: <ReactIcon className="text-teal-500" size={8} /> },
+    { name: "Chrome", icon: <ChromeIcon className="text-teal-500" size={8} /> },
+    { name: "Github", icon: <GithubIcon className="text-teal-500" size={8} /> },
   ];
 
   return (
@@ -32,7 +37,7 @@ const AboutMe = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="bg-white dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-lg p-6">
           <h3 className="flex items-center text-xl font-semibold mb-2 text-black dark:text-white">
             <span className="text-teal-400 mr-2">✦</span> My Reads
@@ -57,11 +62,11 @@ const AboutMe = () => {
             Explore the technologies and tools I use to craft exceptional
             digital experiences.
           </p>
-          <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-7 md:grid-cols-15 gap-4">
             {tools.map((tool) => (
               <div
                 key={tool.name}
-                className="dark:bg-gray-700 bg-white rounded-lg p-3 flex flex-col items-center justify-center hover:bg-teal-500 transition-all duration-300"
+                className="dark:bg-gray-700 bg-white rounded-lg p-3 flex flex-row gap-2 items-center justify-center hover:bg-teal-500 transition-all duration-300"
               >
                 {tool.icon}
                 <span className="text-xs mt-1 text-white">{tool.name}</span>
@@ -69,8 +74,9 @@ const AboutMe = () => {
             ))}
           </div>
         </div>
-
-        <div className="dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-700 bg-white rounded-2xl shadow-lg p-6">
+      </div>
+      <div className="flex py-20 gap-5">
+        <div className="dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-700 bg-white rounded-2xl  shadow-lg p-6">
           <h3 className="flex items-center text-xl font-semibold mb-2 text-black dark:text-white">
             <span className="text-teal-400 mr-2">✦</span> Beyond the Code
           </h3>
@@ -96,7 +102,6 @@ const AboutMe = () => {
             ))}
           </div>
         </div>
-
         <div className="dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-700 bg-white rounded-2xl shadow-lg p-4 overflow-hidden">
           <Image
             src={map}
