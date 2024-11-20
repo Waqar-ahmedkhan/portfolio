@@ -75,7 +75,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="flex py-20 gap-5">
+      <div className="flex py-20 gap-5a">
         <div className="dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-700 bg-white rounded-2xl  shadow-lg p-6">
           <h3 className="flex items-center text-xl font-semibold mb-2 text-black dark:text-white">
             <span className="text-teal-400 mr-2">✦</span> Beyond the Code
